@@ -1,7 +1,8 @@
 // requestMethod.js
 import axios from "axios";
 
-const API_BASE_URL = "http://localhost:5000/api"; // Replace this with your API base URL
+// export const API_BASE_URL = "http://localhost:5000/api";
+export const API_BASE_URL = "https://blogger-a0lc.onrender.com"; // Replace this with your API base URL
 
 const requestMethod = async (method, url, data, headers = {}) => {
   try {
