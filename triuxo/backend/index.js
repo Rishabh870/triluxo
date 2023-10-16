@@ -24,13 +24,13 @@ mongoose
   });
 
 // Mount the user routes
-app.use("/api/auth", userRoutes);
+app.use("/auth", userRoutes);
 
 // Mount the blog routes
-app.use("/api/blogs", blogRoutes);
+app.use("/blogs", blogRoutes);
 
 // Mount the comment routes
-app.use("/api/comments", commentRoutes);
+app.use("/comments", commentRoutes);
 
 app.get("/", (req, res) => res.send("Hello World!"));
 app.listen(PORT, () => {
